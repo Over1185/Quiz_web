@@ -1,0 +1,1324 @@
+{
+    "preguntas": [
+        {
+            "id": 1,
+            "pregunta": "Según el enunciado práctico, ¿qué tamaño debe tener el Disco A?",
+            "opciones": {
+                "A": "5 GB",
+                "B": "10 GB",
+                "C": "15 GB",
+                "D": "20 GB"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 2,
+            "pregunta": "¿Qué interfaz se sugiere usar para el Disco A en el ejercicio?",
+            "opciones": {
+                "A": "IDE",
+                "B": "VirtIO",
+                "C": "SATA o SCSI",
+                "D": "USB"
+            },
+            "respuesta": "C"
+        },
+        {
+            "id": 3,
+            "pregunta": "¿Qué tamaño debe tener el Disco B según el documento?",
+            "opciones": {
+                "A": "10 GB",
+                "B": "12 GB",
+                "C": "15 GB",
+                "D": "25 GB"
+            },
+            "respuesta": "C"
+        },
+        {
+            "id": 4,
+            "pregunta": "¿Qué interfaz se sugiere para el Disco B en la práctica?",
+            "opciones": {
+                "A": "IDE o VirtIO",
+                "B": "SATA",
+                "C": "SCSI",
+                "D": "NVMe"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 5,
+            "pregunta": "El ejercicio pide crear cuántas particiones en el Disco A?",
+            "opciones": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4"
+            },
+            "respuesta": "C"
+        },
+        {
+            "id": 6,
+            "pregunta": "En la práctica se indica asignar IDs a las particiones. ¿Cuál de estas es una forma típica de identificar particiones en Linux?",
+            "opciones": {
+                "A": "UUID de partición",
+                "B": "Dirección MAC",
+                "C": "Nombre de host",
+                "D": "Dirección IP"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 7,
+            "pregunta": "Para crear sistemas de archivos ext4 se usa generalmente el comando:",
+            "opciones": {
+                "A": "mkfs.ext4",
+                "B": "mkfs.ntfs",
+                "C": "mkfs.fat",
+                "D": "mkfs.zfs"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 8,
+            "pregunta": "¿Qué comando muestra información de bloques y dispositivos (tabla de particiones, tamaños)?",
+            "opciones": {
+                "A": "ls",
+                "B": "lsblk",
+                "C": "ps",
+                "D": "top"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 9,
+            "pregunta": "¿Cuál es la utilidad tradicional para particionar discos desde consola (MBR/GPT)?",
+            "opciones": {
+                "A": "fdisk/parted",
+                "B": "nano",
+                "C": "systemctl",
+                "D": "useradd"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 10,
+            "pregunta": "Si necesitas escribir en /etc/fstab para montar automáticamente, ¿qué campo identifica la partición de forma persistente?",
+            "opciones": {
+                "A": "El nombre de usuario",
+                "B": "El UUID o LABEL",
+                "C": "La IP del servidor",
+                "D": "El comando mount"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 11,
+            "pregunta": "¿Qué comando crea un volumen físico para LVM?",
+            "opciones": {
+                "A": "vgcreate",
+                "B": "lvcreate",
+                "C": "pvcreate",
+                "D": "mkfs"
+            },
+            "respuesta": "C"
+        },
+        {
+            "id": 12,
+            "pregunta": "¿Qué comando crea un grupo de volúmenes LVM?",
+            "opciones": {
+                "A": "vgcreate",
+                "B": "pvcreate",
+                "C": "lvcreate",
+                "D": "vgextend"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 13,
+            "pregunta": "Para crear un volumen lógico en LVM se usa:",
+            "opciones": {
+                "A": "lvcreate",
+                "B": "mkfs",
+                "C": "mount",
+                "D": "pvcreate"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 14,
+            "pregunta": "Si quieres ver UUIDs de sistemas de archivos para /etc/fstab, ¿qué comando puedes usar?",
+            "opciones": {
+                "A": "blkid",
+                "B": "grep",
+                "C": "chmod",
+                "D": "curl"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 15,
+            "pregunta": "Para montar un sistema de archivos en /mnt/dira manualmente usarías:",
+            "opciones": {
+                "A": "mount /dev/sdXN /mnt/dira",
+                "B": "umount /mnt/dira",
+                "C": "ls /dev/sdXN",
+                "D": "fdisk /mnt/dira"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 16,
+            "pregunta": "¿Cuál es el archivo donde se registran configuraciones de montajes persistentes?",
+            "opciones": {
+                "A": "/etc/hosts",
+                "B": "/etc/fstab",
+                "C": "/etc/passwd",
+                "D": "/etc/shadow"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 17,
+            "pregunta": "Según la práctica, un servicio systemd debe hacer ping cada cuántos segundos a 8.8.8.8?",
+            "opciones": {
+                "A": "Cada 5 segundos",
+                "B": "Cada 10 segundos",
+                "C": "Cada 30 segundos",
+                "D": "Cada 60 segundos"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 18,
+            "pregunta": "El servicio de systemd debe enviar cuántos paquetes cada vez que hace ping (según el enunciado)?",
+            "opciones": {
+                "A": "1 paquete",
+                "B": "3 paquetes",
+                "C": "5 paquetes",
+                "D": "10 paquetes"
+            },
+            "respuesta": "C"
+        },
+        {
+            "id": 19,
+            "pregunta": "El resultado del ping debe guardarse en:",
+            "opciones": {
+                "A": "/var/log/ping.log",
+                "B": "/tmp/ping.txt",
+                "C": "/mnt/dira/tarea.log",
+                "D": "/home/user/ping.log"
+            },
+            "respuesta": "C"
+        },
+        {
+            "id": 20,
+            "pregunta": "El segundo servicio debe escribir en el mismo archivo el:",
+            "opciones": {
+                "A": "nombre de la máquina",
+                "B": "espacio libre del disco",
+                "C": "nombre de los grupos del usuario actual",
+                "D": "uso de CPU"
+            },
+            "respuesta": "C"
+        },
+        {
+            "id": 21,
+            "pregunta": "¿Qué unidad de systemd usarías para un servicio que ejecuta un comando simple en arranque?",
+            "opciones": {
+                "A": "service (unit .service)",
+                "B": "target",
+                "C": "mount",
+                "D": "path"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 22,
+            "pregunta": "En un archivo unit .service, ¿qué directiva define el comando a ejecutar?",
+            "opciones": {
+                "A": "Description=",
+                "B": "ExecStart=",
+                "C": "After=",
+                "D": "WantedBy="
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 23,
+            "pregunta": "Para habilitar un servicio para que arranque al boot usarías:",
+            "opciones": {
+                "A": "systemctl start nombre.service",
+                "B": "systemctl enable nombre.service",
+                "C": "systemctl status nombre.service",
+                "D": "systemctl reload nombre.service"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 24,
+            "pregunta": "Para iniciar inmediatamente un servicio se usa:",
+            "opciones": {
+                "A": "systemctl enable",
+                "B": "systemctl start",
+                "C": "systemctl disable",
+                "D": "systemctl mask"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 25,
+            "pregunta": "¿Qué comando muestra los logs de systemd para un servicio específico?",
+            "opciones": {
+                "A": "journalctl -u nombre.service",
+                "B": "dmesg nombre.service",
+                "C": "cat /var/log/messages nombre.service",
+                "D": "logread nombre.service"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 26,
+            "pregunta": "Si una partición no aparece en lsblk, ¿qué acción es más adecuada primero?",
+            "opciones": {
+                "A": "Reiniciar el sistema inmediatamente",
+                "B": "Ejecutar dmesg y revisar mensajes del kernel",
+                "C": "Borrar /etc/fstab",
+                "D": "Formatear /"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 27,
+            "pregunta": "¿Qué comando se usa para ver particiones y números de dispositivo (por ejemplo /dev/sda1)?",
+            "opciones": {
+                "A": "ls -l /dev",
+                "B": "fdisk -l",
+                "C": "cat /proc/partitions",
+                "D": "touch /dev/sda1"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 28,
+            "pregunta": "¿Cuál es el efecto de mount -o remount /punto?",
+            "opciones": {
+                "A": "Desmontar el punto",
+                "B": "Volver a montar con nuevas opciones sin desmontar",
+                "C": "Formatear el sistema de archivos",
+                "D": "Eliminar el directorio"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 29,
+            "pregunta": "Si necesitas forzar el desmontaje de un dispositivo ocupado, ¿qué opción suele usarse?",
+            "opciones": {
+                "A": "umount -f",
+                "B": "umount -r",
+                "C": "umount -n",
+                "D": "umount -z"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 30,
+            "pregunta": "Para copiar una imagen de disco (bit a bit) se puede usar:",
+            "opciones": {
+                "A": "cp -r",
+                "B": "dd",
+                "C": "tar",
+                "D": "rsync"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 31,
+            "pregunta": "¿Qué comando muestra el uso de espacio en disco por punto de montaje?",
+            "opciones": {
+                "A": "du -h /ruta",
+                "B": "df -h",
+                "C": "free -h",
+                "D": "top"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 32,
+            "pregunta": "Si en el enunciado se pide que las particiones tengan IDs específicos (10,20,30), a qué se refiere esto normalmente?",
+            "opciones": {
+                "A": "Numeración de particiones MBR",
+                "B": "IDs de tipo de partición (partition type IDs)",
+                "C": "UID del usuario",
+                "D": "Tamaño en MB"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 33,
+            "pregunta": "Qué herramienta permite cambiar el tipo de partición en fdisk/parted?",
+            "opciones": {
+                "A": "t (en fdisk) o set/part-type (en parted)",
+                "B": "chmod",
+                "C": "chown",
+                "D": "systemctl"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 34,
+            "pregunta": "¿Qué sistema de archivos es común para Linux y mencionado en prácticas (ej. por compatibilidad)?",
+            "opciones": {
+                "A": "NTFS",
+                "B": "ext4",
+                "C": "FAT16",
+                "D": "HFS+"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 35,
+            "pregunta": "El comando 'mkfs.xfs' crea un sistema de archivos XFS. ¿Cuál es una característica típica de XFS?",
+            "opciones": {
+                "A": "No soporta grandes volúmenes",
+                "B": "Optimizado para grandes archivos y alto rendimiento",
+                "C": "Solo para sistemas embebidos",
+                "D": "No soporta journaling"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 36,
+            "pregunta": "Para ver información detallada de un dispositivo (modelo y serial) se puede usar:",
+            "opciones": {
+                "A": "udevadm info --query=all --name=/dev/sdX",
+                "B": "cat /etc/os-release",
+                "C": "whoami",
+                "D": "finger"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 37,
+            "pregunta": "Si necesitas que un servicio escriba el nombre de los grupos del usuario actual, ¿qué comando imprime esos grupos?",
+            "opciones": {
+                "A": "groups",
+                "B": "id -u",
+                "C": "whoami",
+                "D": "uname -r"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 38,
+            "pregunta": "Para redirigir salida de un comando y anexar al archivo /mnt/dira/tarea.log, la sintaxis sería:",
+            "opciones": {
+                "A": "comando > /mnt/dira/tarea.log",
+                "B": "comando >> /mnt/dira/tarea.log",
+                "C": "comando | /mnt/dira/tarea.log",
+                "D": "comando &> /mnt/dira/tarea.log"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 39,
+            "pregunta": "En un unit file, ¿qué sección contiene ExecStart y otras órdenes del servicio?",
+            "opciones": {
+                "A": "[Unit]",
+                "B": "[Service]",
+                "C": "[Install]",
+                "D": "[Mount]"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 40,
+            "pregunta": "Para hacer que un servicio se reinicie automáticamente tras un fallo, se usa en [Service]:",
+            "opciones": {
+                "A": "Restart=on-failure",
+                "B": "Restart=no",
+                "C": "Restart=never",
+                "D": "Restart=manual"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 41,
+            "pregunta": "Si quieres que un servicio se inicie después de la red, usarías en [Unit]:",
+            "opciones": {
+                "A": "After=network.target",
+                "B": "Before=network.target",
+                "C": "Wants=networking",
+                "D": "RequiresMountsFor="
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 42,
+            "pregunta": "¿Cuál de estos comandos permite volver a cargar los unit files tras editar un .service?",
+            "opciones": {
+                "A": "systemctl reload nombre.service",
+                "B": "systemctl daemon-reload",
+                "C": "systemctl restart nombre.service",
+                "D": "systemctl status"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 43,
+            "pregunta": "¿Qué archivo suele contener unidades de servicio creadas por el administrador en el sistema?",
+            "opciones": {
+                "A": "/etc/systemd/system/",
+                "B": "/usr/bin/",
+                "C": "/home/user/.config/",
+                "D": "/opt/services/"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 44,
+            "pregunta": "Para comprobar si un punto de montaje existe y está accesible, debes usar:",
+            "opciones": {
+                "A": "mountpoint /ruta",
+                "B": "chown /ruta",
+                "C": "passwd /ruta",
+                "D": "useradd /ruta"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 45,
+            "pregunta": "Si necesitas crear un punto de montaje vacío en /mnt/dira, ¿qué comando usarías?",
+            "opciones": {
+                "A": "mkdir -p /mnt/dira",
+                "B": "touch /mnt/dira",
+                "C": "cp / /mnt/dira",
+                "D": "rm -rf /mnt/dira"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 46,
+            "pregunta": "Para ajustar permisos de escritura en /mnt/dira para todos los usuarios se usa:",
+            "opciones": {
+                "A": "chmod 777 /mnt/dira",
+                "B": "chmod 000 /mnt/dira",
+                "C": "chown root:root /mnt/dira",
+                "D": "passwd /mnt/dira"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 47,
+            "pregunta": "¿Qué comando actualiza la tabla de particiones en el kernel después de crear particiones?",
+            "opciones": {
+                "A": "partprobe",
+                "B": "ls",
+                "C": "chmod",
+                "D": "service restart"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 48,
+            "pregunta": "Cuando se usa dd para crear un archivo de imagen, el parámetro bs significa:",
+            "opciones": {
+                "A": "block size",
+                "B": "boot sector",
+                "C": "binary safe",
+                "D": "buffer sync"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 49,
+            "pregunta": "¿Qué comando lista todos los volúmenes LVM y su estado?",
+            "opciones": {
+                "A": "lvdisplay, vgdisplay, pvdisplay",
+                "B": "ls -l /lvm",
+                "C": "df -h /dev/vg",
+                "D": "mount | grep lvm"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 50,
+            "pregunta": "Si una unidad requiere que se inicie después de /var, ¿qué dependencia se usa?",
+            "opciones": {
+                "A": "After=var.mount",
+                "B": "After=local-fs.target",
+                "C": "After=network.target",
+                "D": "After=sysinit.target"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 51,
+            "pregunta": "En /etc/fstab, el campo de opciones 'defaults' incluye entre otras:",
+            "opciones": {
+                "A": "rw,suid,dev,exec,auto,nouser,async",
+                "B": "ro,nosuid,nodev,noexec",
+                "C": "sync,users,relatime",
+                "D": "cache,noauto,remount"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 52,
+            "pregunta": "¿Qué herramienta se usa para crear tablas de particiones GPT de forma amigable?",
+            "opciones": {
+                "A": "fdisk",
+                "B": "cfdisk",
+                "C": "parted",
+                "D": "vi"
+            },
+            "respuesta": "C"
+        },
+        {
+            "id": 53,
+            "pregunta": "Si una partición se formatea con ext4 y quieres chequearla, se usa:",
+            "opciones": {
+                "A": "fsck.ext4 /dev/sdXN",
+                "B": "checkfs /dev/sdXN",
+                "C": "mkfs -t ext4 /dev/sdXN",
+                "D": "tune2fs /dev/sdXN"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 54,
+            "pregunta": "Para forzar la creación de un sistema de archivos ext4 sin confirmación se puede usar:",
+            "opciones": {
+                "A": "mkfs.ext4 -F /dev/sdXN",
+                "B": "mkfs.ext4 --yes /dev/sdXN",
+                "C": "format ext4 /dev/sdXN",
+                "D": "mkfs -y /dev/sdXN"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 55,
+            "pregunta": "¿Qué comando muestra procesos que usan un punto de montaje y pueden impedir un umount?",
+            "opciones": {
+                "A": "lsof +D /mnt/dira",
+                "B": "ps aux | grep /mnt/dira",
+                "C": "who /mnt/dira",
+                "D": "df -h /mnt/dira"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 56,
+            "pregunta": "Si quieres ver la jerarquía de dispositivos (por ejemplo /dev/mapper) y relaciones LVM, qué comando es útil:",
+            "opciones": {
+                "A": "ls -R /dev",
+                "B": "lsblk -f",
+                "C": "tree /dev",
+                "D": "blkid -o list"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 57,
+            "pregunta": "¿Qué significa 'VirtIO' en el contexto del ejercicio?",
+            "opciones": {
+                "A": "Una interfaz de red física",
+                "B": "Un tipo de controlador paravirtualizado en máquinas virtuales",
+                "C": "Un sistema de archivos",
+                "D": "Un gestor de particiones"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 58,
+            "pregunta": "Para comprobar que un servicio systemd está habilitado y activo, usarías:",
+            "opciones": {
+                "A": "systemctl status nombre.service",
+                "B": "cat /etc/systemd/nombre.service",
+                "C": "service nombre status",
+                "D": "initctl status nombre"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 59,
+            "pregunta": "Si un servicio necesita escribir en /mnt/dira/tarea.log y falla, ¿qué permiso de archivo podría impedirlo?",
+            "opciones": {
+                "A": "Sin permiso de ejecución en el archivo",
+                "B": "Sin permiso de escritura para el usuario que ejecuta el servicio",
+                "C": "Sin permiso de lectura para root",
+                "D": "Sin permiso de lectura para el grupo 'wheel'"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 60,
+            "pregunta": "¿Qué comando cambia el propietario de /mnt/dira a un usuario específico?",
+            "opciones": {
+                "A": "chmod usuario /mnt/dira",
+                "B": "chown usuario:grupo /mnt/dira",
+                "C": "usermod -d /mnt/dira usuario",
+                "D": "passwd usuario /mnt/dira"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 61,
+            "pregunta": "En el contexto del examen, ¿qué utilidad permite simular discos virtuales antes de agregarlos a la VM?",
+            "opciones": {
+                "A": "qemu-img",
+                "B": "mkdisk",
+                "C": "virt-make",
+                "D": "vboxmanage"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 62,
+            "pregunta": "Si un equipo virtual no detecta un disco nuevo, ¿qué acción podría servir para forzar la detección sin reiniciar?",
+            "opciones": {
+                "A": "reboot -f",
+                "B": "echo 1 > /sys/block/sdX/device/rescan",
+                "C": "rm /dev/sdX",
+                "D": "systemctl reload"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 63,
+            "pregunta": "¿Cuál es la forma correcta de referirse a la primera partición del primer disco SATA en Linux?",
+            "opciones": {
+                "A": "/dev/sda",
+                "B": "/dev/sda1",
+                "C": "/dev/sdb1",
+                "D": "/dev/hda1"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 64,
+            "pregunta": "Si un script de servicio debe ejecutarse como usuario regular, ¿qué directiva usarías en el unit file?",
+            "opciones": {
+                "A": "User=nombre",
+                "B": "RunAs=nombre",
+                "C": "Owner=nombre",
+                "D": "ExecUser=nombre"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 65,
+            "pregunta": "Para que un servicio systemd se ejecute periódicamente sin escribir un timer separado, ¿qué alternativa existe?",
+            "opciones": {
+                "A": "Usar Restart=always",
+                "B": "Usar un timer (.timer) junto al .service",
+                "C": "Usar cron en /etc/crontab exclusivamente",
+                "D": "No es posible; debe usarse un script externo"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 66,
+            "pregunta": "En la práctica se pide que el servicio haga ping y guarde resultados. Para que el servicio no ocupe recursos permanentemente, se suele configurar:",
+            "opciones": {
+                "A": "Type=oneshot y usar un timer",
+                "B": "Type=idle y nunca parar",
+                "C": "Type=forking sin límite",
+                "D": "Type=notify con DelaySec=0"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 67,
+            "pregunta": "¿Cuál es la utilidad para mostrar etiquetas y sistemas de archivos de las particiones?",
+            "opciones": {
+                "A": "blkid",
+                "B": "hdparm",
+                "C": "mount",
+                "D": "lsmod"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 68,
+            "pregunta": "Si quieres que un archivo en /mnt/dira sea accesible por todos los usuarios sin problemas, ¿qué permiso es el más permisivo?",
+            "opciones": {
+                "A": "chmod 700",
+                "B": "chmod 644",
+                "C": "chmod 666",
+                "D": "chmod 755"
+            },
+            "respuesta": "C"
+        },
+        {
+            "id": 69,
+            "pregunta": "¿Qué comando lista información sobre particiones en formato legible (tipo, punto de montaje, UUID)?",
+            "opciones": {
+                "A": "lsblk -f",
+                "B": "fdisk -l | less",
+                "C": "blkid | grep",
+                "D": "cat /proc/partitions"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 70,
+            "pregunta": "En la práctica se pide enviar 5 paquetes con ping. ¿Qué opción de ping define el número de paquetes?",
+            "opciones": {
+                "A": "-t",
+                "B": "-c",
+                "C": "-n",
+                "D": "-p"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 71,
+            "pregunta": "Si quieres probar la conectividad desde un servicio systemd, es preferible usar qué comando dentro del ExecStart:",
+            "opciones": {
+                "A": "ping -c 5 8.8.8.8 >> /mnt/dira/tarea.log",
+                "B": "echo 'ping' > /mnt/dira/tarea.log",
+                "C": "curl 8.8.8.8",
+                "D": "telnet 8.8.8.8 80"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 72,
+            "pregunta": "Si el enunciado solicita que el segundo servicio escriba los grupos del usuario actual, ¿qué redirección adicional es necesaria para que no sobrescriba el log del ping?",
+            "opciones": {
+                "A": "> /mnt/dira/tarea.log",
+                "B": ">> /mnt/dira/tarea.log",
+                "C": "| /mnt/dira/tarea.log",
+                "D": "&> /mnt/dira/tarea.log"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 73,
+            "pregunta": "¿Cuál de estos comandos muestra el árbol de dispositivos montados actualmente?",
+            "opciones": {
+                "A": "mount",
+                "B": "systemctl list-units",
+                "C": "df -h | tree",
+                "D": "cat /etc/mtab"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 74,
+            "pregunta": "Si quieres que un servicio espere a que un filesystem esté montado antes de ejecutarse, en [Unit] usarías:",
+            "opciones": {
+                "A": "Wants=local-fs.target",
+                "B": "Conflicts=local-fs.target",
+                "C": "Before=local-fs.target",
+                "D": "After=local-fs.target"
+            },
+            "respuesta": "D"
+        },
+        {
+            "id": 75,
+            "pregunta": "Para crear un servicio que se ejecute como root y no espere a salida, una opción adecuada en [Service] es:",
+            "opciones": {
+                "A": "Type=simple",
+                "B": "Type=oneshot",
+                "C": "Type=forking",
+                "D": "Type=idle"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 76,
+            "pregunta": "Para mostrar el árbol de dispositivos block (incluyendo loop) y ver tamaños, usarías:",
+            "opciones": {
+                "A": "lsblk",
+                "B": "fdisk -l",
+                "C": "blkid -o value",
+                "D": "cat /sys/block/sda/size"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 77,
+            "pregunta": "Si necesitas crear un archivo de dispositivo de prueba (imagen) y montarlo, primero crearías la imagen con dd y luego:",
+            "opciones": {
+                "A": "losetup /dev/loopX imagen.img",
+                "B": "mount imagen.img /mnt",
+                "C": "mkfs imagen.img",
+                "D": "fdisk imagen.img"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 78,
+            "pregunta": "¿Qué comando elimina una entrada específica de /etc/fstab para impedir el automount?",
+            "opciones": {
+                "A": "vim /etc/fstab y borrar la línea correspondiente",
+                "B": "systemctl disable fstab",
+                "C": "umount -a",
+                "D": "blkid -r"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 79,
+            "pregunta": "¿Qué permiso necesita el servicio para escribir en /mnt/dira/tarea.log si es ejecutado como root?",
+            "opciones": {
+                "A": "No necesita permisos especiales, root puede escribir",
+                "B": "Debe ser ejecutado por el propietario del archivo",
+                "C": "Debe tener permiso setuid",
+                "D": "Debe estar en el mismo grupo"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 80,
+            "pregunta": "Si quieres que un servicio se ejecute con un entorno de variables definido, en el unit podrías usar:",
+            "opciones": {
+                "A": "Environment=VAR=valor",
+                "B": "Export VAR=valor",
+                "C": "SetEnv VAR valor",
+                "D": "EnvFile /etc/env"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 81,
+            "pregunta": "Para convertir un dispositivo (por ejemplo /dev/sdb) en un PV LVM, ¿qué requisito previo debes verificar?",
+            "opciones": {
+                "A": "Que la partición esté montada",
+                "B": "Que no tenga un sistema de archivos activo o que estés dispuesto a formatearla",
+                "C": "Que tenga menos de 1 GB",
+                "D": "Que sea un dispositivo USB"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 82,
+            "pregunta": "Si agregas un disco a la VM y el kernel no reconoce la tabla de particiones, ¿qué comando ayuda a recargar la información?",
+            "opciones": {
+                "A": "partprobe /dev/sdX",
+                "B": "fsck /dev/sdX",
+                "C": "mkfs /dev/sdX",
+                "D": "resize2fs /dev/sdX"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 83,
+            "pregunta": "En /etc/fstab, usar 'noauto' provoca que la partición:",
+            "opciones": {
+                "A": "Se monte automáticamente al inicio",
+                "B": "No se monte automáticamente al inicio",
+                "C": "Se monte sólo si es usuario root",
+                "D": "Se monte en modo lectura"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 84,
+            "pregunta": "En dotación de unidades virtuales, ¿qué opción de virtio beneficia el rendimiento de disco?",
+            "opciones": {
+                "A": "virtio-scsi o virtio-blk",
+                "B": "virtio-net",
+                "C": "virtio-gpu",
+                "D": "virtio-tty"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 85,
+            "pregunta": "¿Cuál es la finalidad de la herramienta 'tune2fs'?",
+            "opciones": {
+                "A": "Ajustar parámetros de sistemas de archivos ext2/3/4",
+                "B": "Formatear en XFS",
+                "C": "Crear volúmenes LVM",
+                "D": "Listar archivos ocultos"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 86,
+            "pregunta": "Si necesitas reasignar permisos de escritura recursivamente en un punto de montaje, ¿qué comando usarías?",
+            "opciones": {
+                "A": "chmod -R 775 /mnt/dira",
+                "B": "chmod --recursive /mnt/dira 775",
+                "C": "chown -R /mnt/dira 775",
+                "D": "umount -R /mnt/dira"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 87,
+            "pregunta": "¿Qué comando se usa para crear una etiqueta de volumen (LABEL) al formatear ext4?",
+            "opciones": {
+                "A": "mkfs.ext4 -L NOMBRE /dev/sdXN",
+                "B": "e2label /dev/sdXN NOMBRE",
+                "C": "tune2fs -L NOMBRE /dev/sdXN",
+                "D": "Todas las anteriores (A o B o C según el momento)"
+            },
+            "respuesta": "D"
+        },
+        {
+            "id": 88,
+            "pregunta": "Para consultar el estado general del espacio en disco en human readable, usarías:",
+            "opciones": {
+                "A": "df -h",
+                "B": "du -sh /",
+                "C": "ls -lh /",
+                "D": "free -h"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 89,
+            "pregunta": "Si un servicio se inicia pero no ejecuta el comando, la primera acción de diagnóstico es:",
+            "opciones": {
+                "A": "Reescribir el unit file sin comprobar",
+                "B": "Ver journalctl -u nombre.service para errores",
+                "C": "Eliminar /etc/systemd/system",
+                "D": "Deshabilitar systemd"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 90,
+            "pregunta": "Para que systemd re-evalúe las dependencias después de añadir un unit nuevo, se ejecuta:",
+            "opciones": {
+                "A": "systemctl daemon-reload",
+                "B": "systemctl refresh",
+                "C": "systemctl re-eval",
+                "D": "systemctl reset-failed"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 91,
+            "pregunta": "En el contexto de VMs, el controlador 'IDE' es menos óptimo que 'VirtIO' porque:",
+            "opciones": {
+                "A": "Es más moderno",
+                "B": "Tiene peor rendimiento y mayor overhead",
+                "C": "No funciona en Linux",
+                "D": "Consume menos recursos"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 92,
+            "pregunta": "Si una práctica pide que los discos aparezcan listados y disponibles, ¿qué comando conviene ejecutar para comprobarlo?",
+            "opciones": {
+                "A": "lsblk && fdisk -l",
+                "B": "cat /etc/passwd",
+                "C": "systemctl list-units",
+                "D": "docker ps"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 93,
+            "pregunta": "¿Cuál es la forma correcta de añadir una línea a /etc/fstab usando UUID?",
+            "opciones": {
+                "A": "UUID=<UUID> /punto ext4 defaults 0 2",
+                "B": "/dev/sda1 /punto ext4 defaults 0",
+                "C": "LABEL=mi /punto ext4 default 1 1",
+                "D": "device=/dev/sda1 /punto ext4 auto 0 0"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 94,
+            "pregunta": "Si quieres que un servicio ejecute scripts que dependan de la red, además de After=network.target conviene:",
+            "opciones": {
+                "A": "Wants=network-online.target",
+                "B": "Before=network.target",
+                "C": "Conflict=network-online.target",
+                "D": "IgnoreOnIsolate=yes"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 95,
+            "pregunta": "En la rúbrica se evalúa que las particiones sean visibles. ¿Qué herramienta muestra particiones con sus flags y tipos?",
+            "opciones": {
+                "A": "fdisk -l",
+                "B": "ifconfig -a",
+                "C": "netstat -r",
+                "D": "mount -a"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 96,
+            "pregunta": "Si al montar una partición aparece 'permission denied' aunque seas root, ¿qué puede estar ocurriendo?",
+            "opciones": {
+                "A": "El kernel no soporta el filesystem",
+                "B": "El punto de montaje está en un filesystem con atributos inusuales (por ejemplo SELinux context)",
+                "C": "El disco está vacío",
+                "D": "El cable SATA se desconectó"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 97,
+            "pregunta": "Para comprobar atributos SELinux en un archivo usarías:",
+            "opciones": {
+                "A": "ls -Z /ruta",
+                "B": "ls -lZ /ruta",
+                "C": "getenforce",
+                "D": "auditctl -l /ruta"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 98,
+            "pregunta": "Si se requiere documentar en la rúbrica que 'los discos aparecen listados y disponibles', ¿qué salida sirve como evidencia?",
+            "opciones": {
+                "A": "Salida de lsblk mostrando /dev/sdX y tamaños",
+                "B": "Salida de whoami",
+                "C": "Contenido de /etc/hosts",
+                "D": "Salida de uptime"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 99,
+            "pregunta": "¿Qué comando permite crear un sistema de archivos en la primera partición /dev/sdb1 y etiquetarla 'TAREA'?",
+            "opciones": {
+                "A": "mkfs.ext4 -L TAREA /dev/sdb1",
+                "B": "mkfs.xfs /dev/sdb1 -n TAREA",
+                "C": "mke2fs /dev/sdb1 /TAREA",
+                "D": "mklabel TAREA /dev/sdb1"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 100,
+            "pregunta": "Si en la práctica se pide guardar resultados en /mnt/dira/tarea.log, ¿qué precaución debes tomar antes de iniciar los servicios?",
+            "opciones": {
+                "A": "Asegurarte de que /mnt/dira está creado y montado",
+                "B": "Eliminar /var/log/messages",
+                "C": "Cambiar el hostname",
+                "D": "Deshabilitar SELinux"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 101,
+            "pregunta": "¿Qué comando permite ver la configuración actual de una unidad systemd (sin abrir el archivo)?",
+            "opciones": {
+                "A": "systemctl cat nombre.service",
+                "B": "cat /etc/systemd/nombre.service",
+                "C": "systemctl show-config nombre.service",
+                "D": "journalctl -u nombre.service"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 102,
+            "pregunta": "Si un servicio necesita ejecutarse con retrasos entre intentos, ¿qué directiva se usa para esperar antes de reiniciar?",
+            "opciones": {
+                "A": "DelayStartSec=",
+                "B": "RestartSec=",
+                "C": "StartDelay=",
+                "D": "TimeoutStartSec="
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 103,
+            "pregunta": "¿Cuál es la utilidad recomendada para manipular tablas de particiones en modo interactivo tipo curses?",
+            "opciones": {
+                "A": "cfdisk",
+                "B": "fdisk -i",
+                "C": "sfdisk gui",
+                "D": "parted --gui"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 104,
+            "pregunta": "Para redireccionar tanto stdout como stderr y anexar al log, la sintaxis en ExecStart sería:",
+            "opciones": {
+                "A": "comando >> /ruta/log 2>&1",
+                "B": "comando > /ruta/log 2>/dev/null",
+                "C": "comando &>> /ruta/log",
+                "D": "comando |& tee -a /ruta/log"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 105,
+            "pregunta": "Si se pide que el servicio escriba los grupos del usuario actual, y el servicio corre como root, ¿cómo obtienes los grupos del usuario 'juan'?",
+            "opciones": {
+                "A": "groups juan",
+                "B": "id -u juan",
+                "C": "whoami juan",
+                "D": "getent groups juan"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 106,
+            "pregunta": "En la rúbrica se evalúa la visibilidad de particiones. Una evidencia válida sería incluir la salida de:",
+            "opciones": {
+                "A": "blkid && lsblk -o NAME,SIZE,FSTYPE,UUID,MOUNTPOINT",
+                "B": "cat /etc/fstab",
+                "C": "mkdir /mnt/evidencia",
+                "D": "dd if=/dev/zero of=/dev/sda bs=1M count=1"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 107,
+            "pregunta": "¿Qué opción de mount evita que usuarios normales monten un dispositivo?",
+            "opciones": {
+                "A": "noauto",
+                "B": "nouser",
+                "C": "user",
+                "D": "exec"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 108,
+            "pregunta": "Si quieres que una entrada en /etc/fstab se monte con opciones no sincronizadas (mejor rendimiento), se usa:",
+            "opciones": {
+                "A": "sync",
+                "B": "async",
+                "C": "ro",
+                "D": "noexec"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 109,
+            "pregunta": "Para comprobar que un servicio timer está activo se usa:",
+            "opciones": {
+                "A": "systemctl status nombre.timer",
+                "B": "systemctl list-timers | grep nombre",
+                "C": "journalctl -u nombre.timer",
+                "D": "Todas las anteriores son válidas"
+            },
+            "respuesta": "D"
+        },
+        {
+            "id": 110,
+            "pregunta": "Si debes crear dos servicios (ping y grupos) que escriban en el mismo archivo, una buena práctica es:",
+            "opciones": {
+                "A": "Asegurar concurrencia mediante redirecciones atómicas o usar flock",
+                "B": "Eliminar el archivo cada vez antes de escribir",
+                "C": "Ejecutarlos exactamente al mismo tiempo",
+                "D": "Usar /tmp en vez de /mnt"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 111,
+            "pregunta": "¿Qué significa que un servicio esté 'masked' en systemd?",
+            "opciones": {
+                "A": "Que está en modo lectura",
+                "B": "Que está enlazado a otro servicio",
+                "C": "Que está deshabilitado y no puede iniciarse (enlazado a /dev/null)",
+                "D": "Que se ejecuta al arranque"
+            },
+            "respuesta": "C"
+        },
+        {
+            "id": 112,
+            "pregunta": "Para crear un servicio de ejemplo que sólo haga un ping y termine, qué Type es el más apropiado:",
+            "opciones": {
+                "A": "Type=oneshot",
+                "B": "Type=simple",
+                "C": "Type=forking",
+                "D": "Type=notify"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 113,
+            "pregunta": "¿Cuál de las siguientes opciones en /etc/fstab evita que el sistema espere al montaje en boot?",
+            "opciones": {
+                "A": "nofail",
+                "B": "defaults",
+                "C": "auto",
+                "D": "user"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 114,
+            "pregunta": "Si necesitas montar un disco con opción de solo lectura temporalmente, usarías:",
+            "opciones": {
+                "A": "mount -o ro /dev/sdXN /mnt/dira",
+                "B": "mount -o rw /dev/sdXN /mnt/dira",
+                "C": "mount -o noexec /dev/sdXN /mnt/dira",
+                "D": "mount -o remount /dev/sdXN /mnt/dira"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 115,
+            "pregunta": "Para conocer el tipo de partición (GPT/MBR) de un disco, se puede usar:",
+            "opciones": {
+                "A": "parted -l",
+                "B": "cat /etc/fstab",
+                "C": "vgscan",
+                "D": "mount -a"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 116,
+            "pregunta": "Si el ejercicio requiere que los discos aparezcan con interfaces correctas, ¿qué comando te muestra la información de bus (SATA/SCSI)?",
+            "opciones": {
+                "A": "udevadm info --query=all --name=/dev/sdX",
+                "B": "ls -l /dev/disk",
+                "C": "blkid --bus",
+                "D": "systemctl show --property=Bus"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 117,
+            "pregunta": "Para documentar la solución en la entrega (evidencia), el alumno debería incluir:",
+            "opciones": {
+                "A": "Comandos ejecutados y salidas relevantes (lsblk, fdisk -l, cat /etc/fstab, systemctl status)",
+                "B": "Sólo la descripción en texto sin comandos",
+                "C": "Capturas de pantalla sin comandos",
+                "D": "Un resumen verbal"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 118,
+            "pregunta": "Si necesitas reasignar el tamaño de una LVM, qué pasos básicos seguirías?",
+            "opciones": {
+                "A": "Reducir el LV directamente con lvreduce sin respaldo",
+                "B": "Aumentar el VG con pvcreate y luego lvextend y resize2fs (o xfs_growfs según FS)",
+                "C": "Formatear todo el disco",
+                "D": "Usar dd para copiar datos y borrar LV"
+            },
+            "respuesta": "B"
+        },
+        {
+            "id": 119,
+            "pregunta": "¿Qué comando se usa para redimensionar un sistema de archivos ext4 después de extender el LV?",
+            "opciones": {
+                "A": "resize2fs /dev/vg/lv",
+                "B": "xfs_growfs /dev/vg/lv",
+                "C": "mkfs.ext4 -r /dev/vg/lv",
+                "D": "lvresize --resizefs --auto"
+            },
+            "respuesta": "A"
+        },
+        {
+            "id": 120,
+            "pregunta": "Finalmente, ¿qué documento o archivo es clave para demostrar que se cumplió la parte de servicios systemd en la práctica?",
+            "opciones": {
+                "A": "El unit file creado en /etc/systemd/system/ y journalctl -u evidencia",
+                "B": "El contenido de /etc/passwd",
+                "C": "El resultado de uname -a",
+                "D": "El directorio /var/tmp"
+            },
+            "respuesta": "A"
+        }
+    ]
+}

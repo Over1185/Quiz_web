@@ -1,0 +1,1082 @@
+{
+  "preguntas": [
+    {
+      "pregunta": "¿Qué hace el comando `echo`?",
+      "opciones": {
+        "a": "Muestra una línea de texto",
+        "b": "Reinicia el sistema",
+        "c": "Muestra la memoria usada",
+        "d": "Elimina un archivo"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué símbolo anexa la salida estándar a un archivo?",
+      "opciones": {
+        "a": ">",
+        "b": ">>",
+        "c": "&",
+        "d": "<"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué comando muestra el uso del disco por sistema de archivos?",
+      "opciones": {
+        "a": "df",
+        "b": "du",
+        "c": "lsblk",
+        "d": "free"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué símbolo representa el directorio personal del usuario?",
+      "opciones": {
+        "a": "..",
+        "b": ".",
+        "c": "~",
+        "d": "/"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando permite descargar archivos desde la web?",
+      "opciones": {
+        "a": "telnet",
+        "b": "ftp",
+        "c": "scp",
+        "d": "wget"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué comando muestra la memoria libre del sistema?",
+      "opciones": {
+        "a": "top",
+        "b": "memstat",
+        "c": "df",
+        "d": "free"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué comando ejecuta otro comando a intervalos regulares?",
+      "opciones": {
+        "a": "sleep",
+        "b": "loop",
+        "c": "watch",
+        "d": "repeat"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando muestra el manual para un comando dado?",
+      "opciones": {
+        "a": "help",
+        "b": "man",
+        "c": "doc",
+        "d": "info-only"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué símbolo representa el directorio actual?",
+      "opciones": {
+        "a": "/",
+        "b": "..",
+        "c": "."
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando muestra documentación más detallada que `man` en muchos casos?",
+      "opciones": {
+        "a": "man --verbose",
+        "b": "doc",
+        "c": "info",
+        "d": "help"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando muestra el calendario?",
+      "opciones": {
+        "a": "calendar",
+        "b": "cal",
+        "c": "time",
+        "d": "date"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué retorna `$!` en Bash?",
+      "opciones": {
+        "a": "El código de salida del último comando",
+        "b": "El PID del último proceso en segundo plano",
+        "c": "El último comando ejecutado",
+        "d": "El historial de comandos"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué hace el comando `clear`?",
+      "opciones": {
+        "a": "Limpia la pantalla del terminal",
+        "b": "Reinicia la terminal",
+        "c": "Apaga el sistema",
+        "d": "Borra archivos"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué comando permite cambiar de shell?",
+      "opciones": {
+        "a": "setenv",
+        "b": "shell",
+        "c": "passwd",
+        "d": "chsh"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué comando busca líneas que coinciden con una expresión regular?",
+      "opciones": {
+        "a": "locate",
+        "b": "find",
+        "c": "search",
+        "d": "grep"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué comando se utiliza para obtener información de DNS sobre un dominio?",
+      "opciones": {
+        "a": "nslookup",
+        "b": "scp",
+        "c": "ssh",
+        "d": "ping"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué comando busca usando expresiones regulares extendidas?",
+      "opciones": {
+        "a": "zgrep",
+        "b": "grep",
+        "c": "find",
+        "d": "egrep"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué comando se utiliza para copiar archivos entre computadoras remotas?",
+      "opciones": {
+        "a": "ssh",
+        "b": "rsync",
+        "c": "scp",
+        "d": "ftp"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando muestra quién está usando actualmente el sistema?",
+      "opciones": {
+        "a": "id",
+        "b": "users",
+        "c": "w",
+        "d": "whoami"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando permite visualizar un archivo de forma paginada hacia adelante solamente?",
+      "opciones": {
+        "a": "tail",
+        "b": "more",
+        "c": "less",
+        "d": "cat"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Cuál es el propósito del comando `alias`?",
+      "opciones": {
+        "a": "Cambiar el shell predeterminado",
+        "b": "Ver historial de comandos",
+        "c": "Definir comandos personalizados",
+        "d": "Cambiar permisos de archivos"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué símbolo se usa para redireccionar la entrada desde un archivo?",
+      "opciones": {
+        "a": ">>",
+        "b": ">",
+        "c": "<",
+        "d": "|"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando le permite desplazarse hacia adelante y hacia atrás a través de un archivo?",
+      "opciones": {
+        "a": "tail -f",
+        "b": "less",
+        "c": "more",
+        "d": "cat"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué comando muestra solo las primeras líneas de un archivo?",
+      "opciones": {
+        "a": "cut",
+        "b": "head",
+        "c": "tail",
+        "d": "first"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué significa `!:2` en el historial de comandos?",
+      "opciones": {
+        "a": "Especifica el segundo argumento del último comando",
+        "b": "Muestra todos los argumentos",
+        "c": "Elimina el historial",
+        "d": "Ejecuta el último comando como root"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué comando se utiliza para conectarse de forma remota a otro equipo mediante protocolo seguro?",
+      "opciones": {
+        "a": "ping",
+        "b": "ssh",
+        "c": "scp",
+        "d": "telnet"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué símbolo se usa para redireccionar la salida estándar a un archivo, sobrescribiéndolo?",
+      "opciones": {
+        "a": ">",
+        "b": "|",
+        "c": "<",
+        "d": ">>"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué comando muestra el historial de comandos utilizados anteriormente?",
+      "opciones": {
+        "a": "log",
+        "b": "history",
+        "c": "echo",
+        "d": "bashrc"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué símbolo se usa para ejecutar múltiples comandos en una sola línea?",
+      "opciones": {
+        "a": "|",
+        "b": ";",
+        "c": "&",
+        "d": ":"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué hace `!42` en el historial de bash?",
+      "opciones": {
+        "a": "Ejecuta 42 veces el último comando",
+        "b": "Ejecuta el comando número 42 del historial",
+        "c": "Elimina el comando 42 del historial",
+        "d": "Repite el último comando 42 veces"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué comando ejecuta otros comandos con múltiples argumentos generados?",
+      "opciones": {
+        "a": "cat",
+        "b": "awk",
+        "c": "xargs",
+        "d": "while"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando muestra el nombre del usuario actual?",
+      "opciones": {
+        "a": "me",
+        "b": "who",
+        "c": "id -g",
+        "d": "whoami"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué comando se usa para comprobar la conectividad con una dirección IP o dominio?",
+      "opciones": {
+        "a": "ping",
+        "b": "telnet",
+        "c": "nslookup",
+        "d": "ssh"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué combinación de teclas detiene un proceso en ejecución en la terminal?",
+      "opciones": {
+        "a": "Ctrl + C",
+        "b": "Ctrl + Z",
+        "c": "Ctrl + X",
+        "d": "Ctrl + V"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes es un shell común de Unix?",
+      "opciones": {
+        "a": "PowerShell",
+        "b": "zsh",
+        "c": "cmd",
+        "d": "BASH"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué comando se usa para establecer variables en BASH?",
+      "opciones": {
+        "a": "alias",
+        "b": "export",
+        "c": "exportenv",
+        "d": "setenv"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué símbolo representa el directorio padre?",
+      "opciones": {
+        "a": "..",
+        "b": ".",
+        "c": "/"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué comando muestra la fecha actual?",
+      "opciones": {
+        "a": "cal",
+        "b": "date",
+        "c": "clock",
+        "d": "time"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué comando establece variables de entorno en TCSH?",
+      "opciones": {
+        "a": "setenv",
+        "b": "export",
+        "c": "set",
+        "d": "define"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué comando muestra la ubicación de un ejecutable?",
+      "opciones": {
+        "a": "where",
+        "b": "find",
+        "c": "locate",
+        "d": "which"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "Firewalld soporta la configuración basada en **zonas de red**. ¿Qué permiten las zonas?",
+      "opciones": {
+        "a": "Bloquear todo el tráfico de red de forma permanente.",
+        "b": "Aumentar la velocidad de transferencia de datos en la red.",
+        "c": "Realizar copias de seguridad de la configuración automáticamente.",
+        "d": "Definir distintos niveles de confianza para interfaces o redes específicas, facilitando la administración según el entorno."
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "Según las fuentes, ¿cuál es una de las **ventajas clave** de usar LVM?",
+      "opciones": {
+        "a": "Permite redimensionar volúmenes en caliente sin desmontar.",
+        "b": "No permite combinar múltiples discos físicos en una sola unidad lógica.",
+        "c": "Limita el tamaño máximo de los volúmenes lógicos.",
+        "d": "Requiere desmontar los volúmenes para redimensionarlos."
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué comando se utiliza para ver los **Physical Volumes (PVs)** en Linux?",
+      "opciones": {
+        "a": "sudo vgs",
+        "b": "sudo pvs",
+        "c": "sudo lvs",
+        "d": "sudo fdisk"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes protocolos de archivos en red se basa en SSH y es ideal para **conexiones a través de redes inseguras o Internet** debido a su cifrado y autenticación?",
+      "opciones": {
+        "a": "CIFS",
+        "b": "SSHFS",
+        "c": "NFS",
+        "d": "SMB"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "Después de modificar el archivo /etc/ssh/sshd_config, ¿qué comando es necesario ejecutar para aplicar los cambios?",
+      "opciones": {
+        "a": "sudo systemctl restart sshd",
+        "b": "sudo reboot",
+        "c": "sudo systemctl stop sshd",
+        "d": "sudo service sshd reload"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Cuál es la **principal diferencia de compatibilidad** entre NFS y CIFS/SMB?",
+      "opciones": {
+        "a": "NFS solo soporta acceso a archivos, mientras que CIFS/SMB solo soporta impresoras.",
+        "b": "NFS está diseñado principalmente para entornos Unix/Linux/macOS, mientras que CIFS/SMB es nativo en sistemas Windows.",
+        "c": "Ambos son igualmente nativos en todos los sistemas operativos.",
+        "d": "NFS es nativo en sistemas Windows, mientras que CIFS/SMB es para Unix/Linux."
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué comando se utiliza para **extender un Logical Volume (LV)** existente, como /home, para usar el 100% del espacio libre disponible en el VG?",
+      "opciones": {
+        "a": "sudo lvreduce",
+        "b": "sudo lvextend -l +100%FREE /dev/almalinux/home",
+        "c": "sudo vgextend",
+        "d": "sudo lvcreate"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "Después de inicializar nuevos discos como PVs, ¿qué comando se utiliza para **extender un Volume Group (VG)** con estos nuevos PVs?",
+      "opciones": {
+        "a": "sudo lvresize",
+        "b": "sudo pvresize",
+        "c": "sudo vgremove",
+        "d": "sudo vgextend"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Cuál es el **sucesor moderno de iptables** que integra la administración del firewall de Linux en una sola herramienta con sintaxis más simple y flexible?",
+      "opciones": {
+        "a": "Netfilter",
+        "b": "ufw",
+        "c": "firewalld",
+        "d": "nftables"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Cuál es la **ventaja del uso de claves SSH** según las fuentes?",
+      "opciones": {
+        "a": "Disminuye la seguridad al eliminar el uso de contraseñas.",
+        "b": "No facilita la gestión de múltiples accesos remotos.",
+        "c": "Aumenta la seguridad al eliminar el uso de contraseñas y permite automatizar tareas.",
+        "d": "Solo permite el acceso manual a los servidores."
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Cuál es el comando más sencillo y automatizado para copiar la clave pública al archivo ~/.ssh/authorized_keys del servidor remoto?",
+      "opciones": {
+        "a": "cat ~/.ssh/id_rsa.pub | ssh usuario@host 'cat >> ~/.ssh/authorized_keys'",
+        "b": "scp ~/.ssh/id_rsa.pub usuario@host:~/.ssh/",
+        "c": "cp ~/.ssh/id_rsa.pub /etc/ssh/",
+        "d": "ssh-copy-id usuario@host"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Cuál es el **primer nivel en LVM** que puede ser un disco completo o una partición y contiene metadatos LVM?",
+      "opciones": {
+        "a": "Logical Volume (LV)",
+        "b": "Volume Group (VG)",
+        "c": "Physical Volume (PV)",
+        "d": "Partition Table (PT)"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando se utiliza para **generar un nuevo par de claves RSA de 4096 bits** en SSH?",
+      "opciones": {
+        "a": "ssh-create-key",
+        "b": "ssh-add",
+        "c": "ssh-keygen -t rsa -b 4096",
+        "d": "ssh-copy-id"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "Según las fuentes, ¿cuál es la **práctica recomendada para la seguridad** combinando firewalls?",
+      "opciones": {
+        "a": "Usar solo firewalls basados en red para simplificar la gestión.",
+        "b": "Deshabilitar todos los firewalls para mejorar el rendimiento.",
+        "c": "Combinar firewalls basados en red con firewalls basados en host para una defensa en profundidad.",
+        "d": "Usar solo firewalls basados en host para un control granular."
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "Una de las limitaciones importantes de Timeshift es que no realiza copias de seguridad de archivos personales por defecto. ¿Qué otra **limitación** se menciona?",
+      "opciones": {
+        "a": "Es una herramienta orientada a la recuperación en red automatizada.",
+        "b": "No permite programar snapshots automáticos.",
+        "c": "Siempre requiere una interfaz gráfica para su uso.",
+        "d": "Si los snapshots se almacenan en el mismo disco del sistema, estos también se perderán ante una falla física."
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes es una **característica fundamental de NFSv4**?",
+      "opciones": {
+        "a": "Requiere el servicio auxiliar rpcbind para operar.",
+        "b": "Utiliza un modelo de operaciones sin estado (stateless).",
+        "c": "Agregó soporte para listas de control de acceso (ACL) y utiliza un modelo de operaciones con estado.",
+        "d": "Solo utiliza UDP para la comunicación."
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué concepto de LVM agrupa uno o más PVs para formar un **pool o reserva de espacio lógico**?",
+      "opciones": {
+        "a": "Volume Group (VG)",
+        "b": "Physical Extent (PE)",
+        "c": "File System (FS)",
+        "d": "Logical Volume (LV)"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué versión de NFS eliminó la limitación de archivos mayores a 2 GB y agregó soporte para **escrituras asíncronas seguras**?",
+      "opciones": {
+        "a": "NFSv3",
+        "b": "NFSv4.1",
+        "c": "NFSv2",
+        "d": "NFSv4"
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué comando verifica si Timeshift ya ha sido configurado anteriormente y **muestra el estado actual de la configuración**?",
+      "opciones": {
+        "a": "sudo timeshift --setup",
+        "b": "sudo timeshift --list",
+        "c": "sudo timeshift --check",
+        "d": "sudo timeshift --rsync"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes es una **característica principal** de NFS?",
+      "opciones": {
+        "a": "Requiere la replicación de información en cada equipo cliente.",
+        "b": "Solo funciona con sistemas operativos Windows Server.",
+        "c": "Utiliza únicamente el protocolo UDP para la comunicación.",
+        "d": "Permite a usuarios y aplicaciones ver, crear, modificar o eliminar archivos remotos con privilegios configurados."
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué es **ufw (Uncomplicated Firewall)** según las fuentes?",
+      "opciones": {
+        "a": "Un frontend simplificado para iptables, diseñado para facilidad y rapidez en la configuración de reglas.",
+        "b": "Una herramienta de gestión dinámica de firewall para entornos corporativos.",
+        "c": "Un backend de bajo nivel para nftables.",
+        "d": "Un sistema de control de paquetes a través del kernel."
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué comando se usa para **inicializar discos como Physical Volumes (PVs)** en LVM?",
+      "opciones": {
+        "a": "sudo vgcreate",
+        "b": "sudo fdisk",
+        "c": "sudo pvcreate",
+        "d": "sudo lvcreate"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Cuál es el propósito de la **migración de PV** en LVM?",
+      "opciones": {
+        "a": "Mover los datos lógicos almacenados en un PV hacia otro PV dentro del mismo VG.",
+        "b": "Reducir el tamaño de un Logical Volume.",
+        "c": "Crear un nuevo Volume Group.",
+        "d": "Convertir un Logical Volume en un Physical Volume."
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Qué recomendación es crucial para la **seguridad de la clave privada SSH**?",
+      "opciones": {
+        "a": "Almacenarla en un servidor público de archivos.",
+        "b": "Mantenerla en el mismo directorio del usuario root.",
+        "c": "Compartirla con otros administradores para facilitar el trabajo en equipo.",
+        "d": "Nunca compartirla y usar una frase de seguridad (passphrase)."
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "Para **redimensionar el sistema de archivos XFS** después de extender un Logical Volume, ¿qué comando se debe usar?",
+      "opciones": {
+        "a": "sudo mkfs.xfs /home",
+        "b": "sudo resize2fs /home",
+        "c": "sudo fsck /home",
+        "d": "sudo xfs_growfs /home"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Cuál es la **función principal de Timeshift** en la administración de sistemas Linux?",
+      "opciones": {
+        "a": "Proteger el sistema contra ataques de ransomware exclusivamente.",
+        "b": "Sincronizar directorios entre diferentes servidores.",
+        "c": "Crear y gestionar snapshots del sistema operativo para restaurarlo a un estado funcional anterior en caso de fallos.",
+        "d": "Realizar copias de seguridad de archivos personales de forma centralizada."
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "La opción `root_squash` en /etc/exports tiene una función de seguridad específica. ¿Cuál es?",
+      "opciones": {
+        "a": "Remapea el usuario root en el cliente remoto a un usuario sin privilegios como `nobody` en el servidor.",
+        "b": "Permite que el usuario root remoto tenga privilegios administrativos en el servidor.",
+        "c": "Deshabilita el acceso NFS para el usuario root.",
+        "d": "Cifra el tráfico de root entre el cliente y el servidor."
+      },
+      "respuesta_correcta": "a"
+    },
+    {
+      "pregunta": "¿Quién desarrolló originalmente NFS en la década de 1980?",
+      "opciones": {
+        "a": "Microsoft",
+        "b": "Hewlett-Packard",
+        "c": "IBM",
+        "d": "Sun Microsystems"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Cuál es el **marco histórico y clásico** para la configuración de cortafuegos en Linux, conocido por su sintaxis compleja?",
+      "opciones": {
+        "a": "nftables",
+        "b": "firewalld",
+        "c": "ufw",
+        "d": "iptables"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "En el archivo /etc/exports, ¿qué opción asegura que las escrituras se confirmen en disco antes de responder, **aumentando la seguridad**?",
+      "opciones": {
+        "a": "async",
+        "b": "sync",
+        "c": "rw",
+        "d": "no_subtree_check"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué parámetro opcional en /etc/ssh/sshd_config puede usarse para **forzar que solo se pueda ingresar con clave pública**, deshabilitando la autenticación por contraseña?",
+      "opciones": {
+        "a": "ChallengeResponseAuthentication no",
+        "b": "PermitRootLogin no",
+        "c": "PubkeyAuthentication yes",
+        "d": "PasswordAuthentication no"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué comando de Timeshift se utiliza para **crear un snapshot manual**?",
+      "opciones": {
+        "a": "timeshift --delete",
+        "b": "timeshift --restore",
+        "c": "timeshift --create",
+        "d": "timeshift --list"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué es la **función principal** de un firewall según las fuentes?",
+      "opciones": {
+        "a": "Acelerar la velocidad de internet en la red local.",
+        "b": "Gestionar el acceso físico a los servidores.",
+        "c": "Optimizar el uso de la CPU del sistema.",
+        "d": "Controlar y filtrar el tráfico de red entrante y saliente basado en reglas predefinidas."
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Cuál es la **principal característica** de un firewall basado en host?",
+      "opciones": {
+        "a": "Es exclusivo para redes externas no confiables.",
+        "b": "Requiere de un reinicio completo del sistema para aplicar nuevas reglas.",
+        "c": "Se ejecuta directamente en una computadora o servidor individual, monitorizando y filtrando su tráfico específico.",
+        "d": "Controla el tráfico de una red completa desde un hardware dedicado."
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "En términos de seguridad, ¿qué protocolo es generalmente considerado **más robusto en configuraciones estándar** entre NFS y CIFS/SMB?",
+      "opciones": {
+        "a": "NFSv2",
+        "b": "NFSv3",
+        "c": "NFS (general)",
+        "d": "CIFS/SMB"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué tipo de firewall se ubica en el **perímetro de la red** y controla el tráfico de la red entera?",
+      "opciones": {
+        "a": "Firewall personal.",
+        "b": "Firewall de aplicación.",
+        "c": "Firewall basado en red.",
+        "d": "Firewall basado en host."
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué tipo de desastres **cubre Timeshift** según las fuentes?",
+      "opciones": {
+        "a": "Fallos físicos del disco donde están los snapshots.",
+        "b": "Pérdida de archivos personales por defecto.",
+        "c": "Fallos del sistema operativo, instalaciones defectuosas, cambios críticos mal realizados.",
+        "d": "Solo ataques de ransomware."
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "Según las fuentes, ¿cuál es uno de los **casos de uso más habituales** de NFS?",
+      "opciones": {
+        "a": "Gestión de la infraestructura de virtualización.",
+        "b": "Acceso remoto seguro para usuarios individuales a través de Internet (sin VPN).",
+        "c": "Sincronización de bases de datos distribuidas.",
+        "d": "Centralización de datos en un servidor único, facilitando el acceso remoto a múltiples equipos dentro de una red local."
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué backend indica explícitamente a Timeshift que utilice para crear snapshots, siendo **compatible con sistemas de archivos como ext4 y xfs**?",
+      "opciones": {
+        "a": "LVM",
+        "b": "rsync",
+        "c": "BTRFS",
+        "d": "ZFS"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "Una de las ventajas más destacadas de Firewalld es la **gestión dinámica de reglas**. ¿Qué permite esto?",
+      "opciones": {
+        "a": "Solo permite la modificación de reglas una vez al día.",
+        "b": "Requiere reiniciar el servicio para cada cambio en la configuración.",
+        "c": "Permite modificar la configuración sin necesidad de reiniciar el servicio ni romper las conexiones de red establecidas.",
+        "d": "Congela las conexiones de red para aplicar los cambios de seguridad."
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "En la autenticación SSH con par de claves, ¿qué clave se copia al servidor remoto y puede compartirse sin comprometer la seguridad?",
+      "opciones": {
+        "a": "Clave privada",
+        "b": "Clave secreta",
+        "c": "Clave simétrica",
+        "d": "Clave pública"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "Para instalar un servidor NFS en RHEL 8, ¿cuáles son los **paquetes fundamentales requeridos**?",
+      "opciones": {
+        "a": "apache y mysql-server",
+        "b": "httpd y php",
+        "c": "nfs-utils y rpcbind",
+        "d": "bind y dhcp"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Cuál es una **buena práctica de uso** de Timeshift según las recomendaciones?",
+      "opciones": {
+        "a": "Almacenar los snapshots en el mismo disco del sistema para un acceso rápido.",
+        "b": "Usar un disco adicional o externo para almacenar los snapshots.",
+        "c": "Deshabilitar los snapshots automáticos para ahorrar espacio.",
+        "d": "No complementar con herramientas de backup para datos personales."
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes es un **tipo de snapshot** que puede crear Timeshift?",
+      "opciones": {
+        "a": "Solo automático.",
+        "b": "Solo manual.",
+        "c": "Manual y automático.",
+        "d": "Solo de red."
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando se usa para **mover los datos de un PV origen** hacia otros PVs libres dentro del mismo Volume Group?",
+      "opciones": {
+        "a": "sudo vgreduce",
+        "b": "sudo lvmove",
+        "c": "sudo pvremove",
+        "d": "sudo pvmove /dev/sdXN"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué es **NFS (Network File System)** según la introducción?",
+      "opciones": {
+        "a": "Un sistema operativo distribuido.",
+        "b": "Un dispositivo de hardware para almacenamiento en red.",
+        "c": "Un protocolo de nivel de enlace que gestiona direcciones IP.",
+        "d": "Un protocolo de nivel de aplicación que permite el acceso, almacenamiento y actualización de archivos en un sistema remoto como si fueran locales."
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "¿Qué herramienta de gestión de firewall dinámica en Linux se basa en nftables o iptables y añade una capa de abstracción con **soporte para zonas**?",
+      "opciones": {
+        "a": "ufw",
+        "b": "Netfilter",
+        "c": "firewalld",
+        "d": "iptables"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "Para asegurar que el servidor SSH permita la autenticación mediante claves públicas, ¿qué parámetro debe estar habilitado en el archivo /etc/ssh/sshd_config?",
+      "opciones": {
+        "a": "PermitRootLogin yes",
+        "b": "PasswordAuthentication no",
+        "c": "PubkeyAuthentication yes",
+        "d": "ChallengeResponseAuthentication no"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "En la actividad práctica de gestión de discos, ¿para qué se utilizó el Disco C de 2GB?",
+      "opciones": {
+        "a": "Para ampliar el espacio de /home",
+        "b": "Para ampliar el espacio de swap o crear uno nuevo",
+        "c": "Para instalar el sistema operativo",
+        "d": "Para almacenar logs del sistema"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Qué comando se utiliza para aplicar cambios permanentes realizados en la configuración de firewalld?",
+      "opciones": {
+        "a": "firewall-cmd --restart",
+        "b": "firewall-cmd --reload",
+        "c": "systemctl restart firewalld",
+        "d": "firewall-cmd --update"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "En el ejercicio de firewalld, ¿qué es una 'rich rule'?",
+      "opciones": {
+        "a": "Una regla que solo permite tráfico HTTP",
+        "b": "Una regla que se aplica a todas las zonas",
+        "c": "Una regla avanzada con condiciones granulares como IP de origen, protocolo y acción",
+        "d": "Una regla que encripta todo el tráfico"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué dos componentes son clave en la arquitectura de LVM?",
+      "opciones": {
+        "a": "Inodos y Bloques",
+        "b": "Particiones y Sectores",
+        "c": "Physical Volumes (PV) y Volume Groups (VG)",
+        "d": "Archivos y Directorios"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "En una configuración de servidor NFS, ¿qué archivo define los directorios a compartir y quién puede acceder a ellos?",
+      "opciones": {
+        "a": "/etc/fstab",
+        "b": "/etc/nfs.conf",
+        "c": "/etc/exports",
+        "d": "/etc/hosts"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué hace la opción `no_root_squash` en una exportación NFS?",
+      "opciones": {
+        "a": "Impide que el usuario root acceda al recurso compartido",
+        "b": "Permite que un usuario root en el cliente tenga privilegios de root en el recurso compartido del servidor",
+        "c": "Mapea al usuario root a un usuario sin privilegios",
+        "d": "Encripta las transferencias de datos para el usuario root"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Para qué se utiliza el comando `semanage` en el contexto de SELinux y servicios de red?",
+      "opciones": {
+        "a": "Para gestionar usuarios y grupos del sistema",
+        "b": "Para iniciar y detener servicios",
+        "c": "Para gestionar las políticas de SELinux, como los contextos de puertos y archivos",
+        "d": "Para monitorear el tráfico de red"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué es una de las principales ventajas de `nftables` sobre `iptables`?",
+      "opciones": {
+        "a": "Es más antiguo y tiene más soporte comunitario",
+        "b": "Utiliza una sintaxis más compleja pero más potente",
+        "c": "Ofrece una sintaxis más simple y un mejor rendimiento",
+        "d": "Solo funciona en distribuciones basadas en Debian"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Cuál es el propósito del archivo `/etc/fstab` en un cliente NFS?",
+      "opciones": {
+        "a": "Configurar las exportaciones del servidor NFS",
+        "b": "Definir las reglas del firewall para el tráfico NFS",
+        "c": "Montar automáticamente el recurso NFS al iniciar el sistema",
+        "d": "Almacenar las estadísticas de uso de NFS"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando de LVM se utiliza para eliminar un Physical Volume (PV) de un Volume Group (VG) después de migrar sus datos?",
+      "opciones": {
+        "a": "vgremove",
+        "b": "pvremove",
+        "c": "vgreduce",
+        "d": "pvresize"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "En `systemd`, ¿cuál es la diferencia entre un archivo `.service` y un archivo `.timer`?",
+      "opciones": {
+        "a": "No hay diferencia, son intercambiables",
+        "b": "El `.service` define qué tarea ejecutar, y el `.timer` define cuándo ejecutarla",
+        "c": "El `.timer` define la tarea y el `.service` define la programación",
+        "d": "Los `.timer` son para tareas únicas y los `.service` para tareas recurrentes"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "Para crear un servicio personalizado en `firewalld`, ¿dónde debe ubicarse el archivo de definición XML?",
+      "opciones": {
+        "a": "/etc/systemd/system/",
+        "b": "/usr/lib/firewalld/services/",
+        "c": "/etc/firewalld/services/",
+        "d": "/var/log/firewalld/"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando se utiliza para verificar qué recursos de un servidor NFS están siendo utilizados por clientes?",
+      "opciones": {
+        "a": "nfsstat",
+        "b": "exportfs -v",
+        "c": "rpcinfo -p",
+        "d": "showmount -a"
+      },
+      "respuesta_correcta": "d"
+    },
+    {
+      "pregunta": "Al configurar un cliente NFS, ¿qué opción de montaje hace que el cliente intente reconectarse indefinidamente si el servidor no responde?",
+      "opciones": {
+        "a": "soft",
+        "b": "hard",
+        "c": "intr",
+        "d": "async"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "En el ejercicio de SSH, ¿qué opción en `/etc/ssh/sshd_config` deshabilita el acceso directo como usuario root?",
+      "opciones": {
+        "a": "AllowUsers root",
+        "b": "PasswordAuthentication no",
+        "c": "PermitRootLogin no",
+        "d": "RootAccess false"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué comando de `firewall-cmd` se utiliza para listar todas las reglas activas en la zona por defecto?",
+      "opciones": {
+        "a": "firewall-cmd --get-active-rules",
+        "b": "firewall-cmd --list-all",
+        "c": "firewall-cmd --print-config",
+        "d": "firewall-cmd --query-rules"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "Según la guía de Timeshift, ¿por qué se recomienda almacenar los snapshots en un disco adicional?",
+      "opciones": {
+        "a": "Porque es más rápido acceder a ellos",
+        "b": "Para no ocupar espacio en el disco del sistema y protegerlos de fallas físicas del disco principal",
+        "c": "Porque el disco principal no soporta snapshots",
+        "d": "Para poder compartirlos más fácilmente en la red"
+      },
+      "respuesta_correcta": "b"
+    },
+    {
+      "pregunta": "¿Cuál es la unidad lógica de almacenamiento dentro de un Volume Group (VG) que el sistema operativo ve como una partición?",
+      "opciones": {
+        "a": "Physical Volume (PV)",
+        "b": "Physical Extent (PE)",
+        "c": "Logical Volume (LV)",
+        "d": "File System (FS)"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "¿Qué protocolo utiliza NFSv4 exclusivamente, lo que le permite operar más fácilmente a través de firewalls?",
+      "opciones": {
+        "a": "UDP",
+        "b": "ICMP",
+        "c": "TCP",
+        "d": "RPC"
+      },
+      "respuesta_correcta": "c"
+    },
+    {
+      "pregunta": "Para permitir el tráfico del servicio SSH en la zona 'public' de `firewalld` de forma permanente, ¿cuál sería el comando correcto?",
+      "opciones": {
+        "a": "firewall-cmd --zone=public --add-port=22/tcp",
+        "b": "firewall-cmd --add-service=ssh",
+        "c": "firewall-cmd --zone=public --add-service=ssh --permanent",
+        "d": "firewall-cmd --permanent --allow-ssh"
+      },
+      "respuesta_correcta": "c"
+    }
+  ]
+}

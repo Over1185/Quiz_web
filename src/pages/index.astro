@@ -1,0 +1,321 @@
+---
+import Layout from "../layouts/Layout.astro";
+import fs from "fs";
+import path from "path";
+
+// Leer los datasets de forma síncrona desde el servidor
+const datasetChatGPTPath = path.join(
+	process.cwd(),
+	"public",
+	"Dataset_ChatGPT.json",
+);
+const datasetGeminiPath = path.join(
+	process.cwd(),
+	"public",
+	"Dataset_Gemini.json",
+);
+
+const datasetChatGPT = JSON.parse(fs.readFileSync(datasetChatGPTPath, "utf-8"));
+const datasetGemini = JSON.parse(fs.readFileSync(datasetGeminiPath, "utf-8"));
+
+// Combinar todas las preguntas
+const todasLasPreguntas = [
+	...datasetChatGPT.preguntas,
+	...datasetGemini.preguntas,
+];
+
+// Función para mezclar array (Fisher-Yates shuffle)
+function shuffleArray(array: any[]) {
+	const shuffled = [...array];
+	for (let i = shuffled.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+	}
+	return shuffled;
+}
+
+// Seleccionar 50 preguntas aleatorias
+const preguntasAleatorias = shuffleArray(todasLasPreguntas).slice(0, 50);
+---
+
+<Layout>
+	<div class="container">
+		<header>
+			<h1>Quiz de Comandos Linux y Administración de Sistemas</h1>
+			<p>
+				Responde las siguientes 50 preguntas sobre comandos de Linux y
+				administración de sistemas.
+			</p>
+		</header>
+
+		<div id="quiz-container">
+			<div id="question-counter">
+				<span id="current-question">1</span> / <span
+					id="total-questions">50</span
+				>
+			</div>
+
+			<div id="progress-bar">
+				<div id="progress"></div>
+			</div>
+
+			<div id="question-container">
+				<h2 id="question-text"></h2>
+				<div id="options-container"></div>
+			</div>
+
+			<div id="navigation">
+				<button id="prev-btn" disabled>Anterior</button>
+				<button id="next-btn">Siguiente</button>
+				<button id="submit-btn" style="display: none;"
+					>Finalizar Quiz</button
+				>
+			</div>
+		</div>
+
+		<div id="results-container" style="display: none;">
+			<h2>¡Quiz Completado!</h2>
+			<div id="score-display">
+				<div class="score-circle">
+					<span id="final-score">0</span>
+					<span class="score-total">/50</span>
+				</div>
+			</div>
+			<div id="score-percentage"></div>
+			<div id="score-message"></div>
+			<div id="detailed-results"></div>
+			<button id="restart-btn">Reiniciar Quiz</button>
+		</div>
+	</div>
+
+	<script type="module" define:vars={{ preguntas: preguntasAleatorias }}>
+		// Datos de las preguntas (pasados desde Astro)
+
+		let preguntaActual = 0;
+		let respuestasUsuario = new Array(50).fill(null);
+		let tiempoInicio = Date.now();
+
+		// Elementos del DOM
+		const questionText = document.getElementById("question-text");
+		const optionsContainer = document.getElementById("options-container");
+		const currentQuestionSpan = document.getElementById("current-question");
+		const progressBar = document.getElementById("progress");
+		const prevBtn = document.getElementById("prev-btn");
+		const nextBtn = document.getElementById("next-btn");
+		const submitBtn = document.getElementById("submit-btn");
+		const quizContainer = document.getElementById("quiz-container");
+		const resultsContainer = document.getElementById("results-container");
+		const restartBtn = document.getElementById("restart-btn");
+
+		// Función para mostrar una pregunta
+		function mostrarPregunta(indice) {
+			const pregunta = preguntas[indice];
+			questionText.textContent = pregunta.pregunta;
+
+			// Limpiar opciones anteriores
+			optionsContainer.innerHTML = "";
+
+			// Crear opciones
+			const opciones = pregunta.opciones;
+			const letrasOpciones = Object.keys(opciones);
+
+			letrasOpciones.forEach((letra) => {
+				const optionDiv = document.createElement("div");
+				optionDiv.className = "option";
+
+				const input = document.createElement("input");
+				input.type = "radio";
+				input.name = `question-${indice}`;
+				input.value = letra;
+				input.id = `option-${indice}-${letra}`;
+
+				// Marcar si ya fue seleccionada
+				if (respuestasUsuario[indice] === letra) {
+					input.checked = true;
+					optionDiv.classList.add("selected");
+				}
+
+				input.addEventListener("change", () => {
+					// Remover clase selected de todas las opciones
+					optionsContainer.querySelectorAll('.option').forEach(opt => {
+						opt.classList.remove('selected');
+					});
+					// Agregar clase selected a la opción actual
+					optionDiv.classList.add('selected');
+					respuestasUsuario[indice] = letra;
+					actualizarEstadoBotones();
+				});
+
+				const label = document.createElement("label");
+				label.htmlFor = `option-${indice}-${letra}`;
+				label.textContent = `${letra.toUpperCase()}. ${opciones[letra]}`;
+
+				optionDiv.appendChild(input);
+				optionDiv.appendChild(label);
+				optionsContainer.appendChild(optionDiv);
+			});
+
+			// Actualizar contador y progreso
+			currentQuestionSpan.textContent = indice + 1;
+			const progreso = ((indice + 1) / 50) * 100;
+			progressBar.style.width = `${progreso}%`;
+
+			actualizarEstadoBotones();
+		}
+
+		// Función para actualizar el estado de los botones
+		function actualizarEstadoBotones() {
+			prevBtn.disabled = preguntaActual === 0;
+
+			if (preguntaActual === 49) {
+				nextBtn.style.display = "none";
+				submitBtn.style.display = "inline-block";
+			} else {
+				nextBtn.style.display = "inline-block";
+				submitBtn.style.display = "none";
+			}
+		}
+
+		// Función para calcular y mostrar resultados
+		function mostrarResultados() {
+			let respuestasCorrectas = 0;
+			const detalles = [];
+
+			preguntas.forEach((pregunta, indice) => {
+				const respuestaUsuario = respuestasUsuario[indice];
+				const respuestaCorrecta =
+					pregunta.respuesta || pregunta.respuesta_correcta;
+				const esCorrecta = respuestaUsuario === respuestaCorrecta;
+
+				if (esCorrecta) {
+					respuestasCorrectas++;
+				}
+
+				detalles.push({
+					pregunta: pregunta.pregunta,
+					respuestaUsuario,
+					respuestaCorrecta,
+					esCorrecta,
+					opciones: pregunta.opciones,
+				});
+			});
+
+			const porcentaje = Math.round((respuestasCorrectas / 50) * 100);
+			const tiempoTotal = Math.round(
+				(Date.now() - tiempoInicio) / 1000 / 60,
+			);
+
+			// Mostrar puntuación
+			document.getElementById("final-score").textContent =
+				respuestasCorrectas;
+			document.getElementById("score-percentage").textContent =
+				`${porcentaje}%`;
+
+			// Mensaje según puntuación
+			let mensaje = "";
+			if (porcentaje >= 90) {
+				mensaje =
+					"¡Excelente! Tienes un dominio excepcional de los comandos Linux.";
+			} else if (porcentaje >= 80) {
+				mensaje = "¡Muy bien! Tienes un buen conocimiento de Linux.";
+			} else if (porcentaje >= 70) {
+				mensaje =
+					"Bien. Tienes conocimientos sólidos, pero puedes mejorar.";
+			} else if (porcentaje >= 60) {
+				mensaje =
+					"Regular. Es recomendable que estudies más sobre comandos Linux.";
+			} else {
+				mensaje =
+					"Necesitas estudiar más sobre comandos y administración Linux.";
+			}
+
+			document.getElementById("score-message").innerHTML = `
+        <p>${mensaje}</p>
+        <p>Tiempo total: ${tiempoTotal} minutos</p>
+      `;
+
+			// Mostrar detalles de respuestas
+			const detailedResults = document.getElementById("detailed-results");
+			detailedResults.innerHTML = `
+        <h3>Revisión de Respuestas</h3>
+        <div class="results-summary">
+          <div class="summary-item correct">
+            <span class="count">${respuestasCorrectas}</span>
+            <span class="label">Correctas</span>
+          </div>
+          <div class="summary-item incorrect">
+            <span class="count">${50 - respuestasCorrectas}</span>
+            <span class="label">Incorrectas</span>
+          </div>
+        </div>
+        <div class="detailed-list">
+          ${detalles
+				.map(
+					(detalle, indice) => `
+            <div class="result-item ${detalle.esCorrecta ? "correct" : "incorrect"}">
+              <div class="result-header">
+                <span class="question-number">Pregunta ${indice + 1}</span>
+                <span class="result-icon">${detalle.esCorrecta ? "✓" : "✗"}</span>
+              </div>
+              <div class="question-text">${detalle.pregunta}</div>
+              <div class="answers">
+                <div class="answer-row">
+                  <strong>Tu respuesta:</strong> 
+                  <span class="${detalle.esCorrecta ? "correct-answer" : "wrong-answer"}">
+                    ${detalle.respuestaUsuario || "Sin respuesta"} - ${detalle.opciones[detalle.respuestaUsuario] || "Sin seleccionar"}
+                  </span>
+                </div>
+                ${
+					!detalle.esCorrecta
+						? `
+                  <div class="answer-row">
+                    <strong>Respuesta correcta:</strong> 
+                    <span class="correct-answer">
+                      ${detalle.respuestaCorrecta} - ${detalle.opciones[detalle.respuestaCorrecta]}
+                    </span>
+                  </div>
+                `
+						: ""
+				}
+              </div>
+            </div>
+          `,
+				)
+				.join("")}
+        </div>
+      `;
+
+			// Cambiar vista
+			quizContainer.style.display = "none";
+			resultsContainer.style.display = "block";
+		}
+
+		// Event listeners
+		nextBtn.addEventListener("click", () => {
+			if (preguntaActual < 49) {
+				preguntaActual++;
+				mostrarPregunta(preguntaActual);
+			}
+		});
+
+		prevBtn.addEventListener("click", () => {
+			if (preguntaActual > 0) {
+				preguntaActual--;
+				mostrarPregunta(preguntaActual);
+			}
+		});
+
+		submitBtn.addEventListener("click", () => {
+			if (confirm("¿Estás seguro de que quieres finalizar el quiz?")) {
+				mostrarResultados();
+			}
+		});
+
+		restartBtn.addEventListener("click", () => {
+			location.reload();
+		});
+
+		// Inicializar quiz
+		mostrarPregunta(0);
+	</script>
+</Layout>
