@@ -110,7 +110,12 @@ const preguntasAleatorias = shuffleArray(todasLasPreguntas).slice(0, 50);
 		// Función helper para obtener el texto de una opción
 		function getOpcionText(opciones, letra) {
 			// Buscar tanto en mayúscula como minúscula
-			return opciones[letra] || opciones[letra?.toLowerCase()] || opciones[letra?.toUpperCase()] || "Opción no encontrada";
+			return (
+				opciones[letra] ||
+				opciones[letra?.toLowerCase()] ||
+				opciones[letra?.toUpperCase()] ||
+				"Opción no encontrada"
+			);
 		}
 
 		// Función para mostrar una pregunta
@@ -143,11 +148,13 @@ const preguntasAleatorias = shuffleArray(todasLasPreguntas).slice(0, 50);
 
 				input.addEventListener("change", () => {
 					// Remover clase selected de todas las opciones
-					optionsContainer.querySelectorAll('.option').forEach(opt => {
-						opt.classList.remove('selected');
-					});
+					optionsContainer
+						.querySelectorAll(".option")
+						.forEach((opt) => {
+							opt.classList.remove("selected");
+						});
 					// Agregar clase selected a la opción actual
-					optionDiv.classList.add('selected');
+					optionDiv.classList.add("selected");
 					respuestasUsuario[indice] = letra;
 					actualizarEstadoBotones();
 				});
@@ -189,20 +196,26 @@ const preguntasAleatorias = shuffleArray(todasLasPreguntas).slice(0, 50);
 
 			preguntas.forEach((pregunta, indice) => {
 				const respuestaUsuario = respuestasUsuario[indice];
-				let respuestaCorrecta = pregunta.respuesta || pregunta.respuesta_correcta;
-				
+				let respuestaCorrecta =
+					pregunta.respuesta || pregunta.respuesta_correcta;
+
 				// Normalizar la respuesta correcta a mayúscula para comparación
-				if (respuestaCorrecta && typeof respuestaCorrecta === 'string') {
+				if (
+					respuestaCorrecta &&
+					typeof respuestaCorrecta === "string"
+				) {
 					respuestaCorrecta = respuestaCorrecta.toUpperCase();
 				}
-				
+
 				// Normalizar la respuesta del usuario a mayúscula para comparación
 				let respuestaUsuarioNormalizada = respuestaUsuario;
-				if (respuestaUsuario && typeof respuestaUsuario === 'string') {
-					respuestaUsuarioNormalizada = respuestaUsuario.toUpperCase();
+				if (respuestaUsuario && typeof respuestaUsuario === "string") {
+					respuestaUsuarioNormalizada =
+						respuestaUsuario.toUpperCase();
 				}
-				
-				const esCorrecta = respuestaUsuarioNormalizada === respuestaCorrecta;
+
+				const esCorrecta =
+					respuestaUsuarioNormalizada === respuestaCorrecta;
 
 				if (esCorrecta) {
 					respuestasCorrectas++;
