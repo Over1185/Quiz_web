@@ -107,6 +107,12 @@ const preguntasAleatorias = shuffleArray(todasLasPreguntas).slice(0, 50);
 		const resultsContainer = document.getElementById("results-container");
 		const restartBtn = document.getElementById("restart-btn");
 
+		// Función helper para obtener el texto de una opción
+		function getOpcionText(opciones, letra) {
+			// Buscar tanto en mayúscula como minúscula
+			return opciones[letra] || opciones[letra?.toLowerCase()] || opciones[letra?.toUpperCase()] || "Opción no encontrada";
+		}
+
 		// Función para mostrar una pregunta
 		function mostrarPregunta(indice) {
 			const pregunta = preguntas[indice];
@@ -183,9 +189,20 @@ const preguntasAleatorias = shuffleArray(todasLasPreguntas).slice(0, 50);
 
 			preguntas.forEach((pregunta, indice) => {
 				const respuestaUsuario = respuestasUsuario[indice];
-				const respuestaCorrecta =
-					pregunta.respuesta || pregunta.respuesta_correcta;
-				const esCorrecta = respuestaUsuario === respuestaCorrecta;
+				let respuestaCorrecta = pregunta.respuesta || pregunta.respuesta_correcta;
+				
+				// Normalizar la respuesta correcta a mayúscula para comparación
+				if (respuestaCorrecta && typeof respuestaCorrecta === 'string') {
+					respuestaCorrecta = respuestaCorrecta.toUpperCase();
+				}
+				
+				// Normalizar la respuesta del usuario a mayúscula para comparación
+				let respuestaUsuarioNormalizada = respuestaUsuario;
+				if (respuestaUsuario && typeof respuestaUsuario === 'string') {
+					respuestaUsuarioNormalizada = respuestaUsuario.toUpperCase();
+				}
+				
+				const esCorrecta = respuestaUsuarioNormalizada === respuestaCorrecta;
 
 				if (esCorrecta) {
 					respuestasCorrectas++;
@@ -193,7 +210,7 @@ const preguntasAleatorias = shuffleArray(todasLasPreguntas).slice(0, 50);
 
 				detalles.push({
 					pregunta: pregunta.pregunta,
-					respuestaUsuario,
+					respuestaUsuario: respuestaUsuarioNormalizada,
 					respuestaCorrecta,
 					esCorrecta,
 					opciones: pregunta.opciones,
@@ -262,7 +279,7 @@ const preguntasAleatorias = shuffleArray(todasLasPreguntas).slice(0, 50);
                 <div class="answer-row">
                   <strong>Tu respuesta:</strong> 
                   <span class="${detalle.esCorrecta ? "correct-answer" : "wrong-answer"}">
-                    ${detalle.respuestaUsuario || "Sin respuesta"} - ${detalle.opciones[detalle.respuestaUsuario] || "Sin seleccionar"}
+                    ${detalle.respuestaUsuario ? `${detalle.respuestaUsuario} - ${getOpcionText(detalle.opciones, detalle.respuestaUsuario)}` : "Sin seleccionar"}
                   </span>
                 </div>
                 ${
@@ -271,7 +288,7 @@ const preguntasAleatorias = shuffleArray(todasLasPreguntas).slice(0, 50);
                   <div class="answer-row">
                     <strong>Respuesta correcta:</strong> 
                     <span class="correct-answer">
-                      ${detalle.respuestaCorrecta} - ${detalle.opciones[detalle.respuestaCorrecta]}
+                      ${detalle.respuestaCorrecta} - ${getOpcionText(detalle.opciones, detalle.respuestaCorrecta)}
                     </span>
                   </div>
                 `
